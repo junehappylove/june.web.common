@@ -6,6 +6,20 @@
 	<version>1.0.0</version>
 	<name>june.web.common</name>
 	<description>june.web.common</description>
+	
+	<distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<name>Releases</name>
+			<url>http://10.50.200.239:8081/repository/maven-releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus</id>
+			<name>Snapshot</name>
+			<url>http://10.50.200.239:8081/repository/maven-snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+	
 	<properties>
 		<spring.version>4.2.5.RELEASE</spring.version>
 		<springfox.version>2.5.0</springfox.version>
