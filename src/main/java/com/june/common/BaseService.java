@@ -38,7 +38,6 @@ public abstract class BaseService<Dao extends BaseDao<Dto>, Dto extends PageDTO<
 	 * @writer wjw.happy.love@163.com
 	 */
 	public Dto getPagedDtos(Dto dto) {
-		//System.out.println("=======" + dao.getClass().toString());
 		dto.setRows(dao.getPageList(dto));
 		dto.setTotal(dao.getTotal(dto));
 		return dto;
