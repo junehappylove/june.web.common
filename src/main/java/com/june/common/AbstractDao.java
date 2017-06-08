@@ -25,7 +25,7 @@ public abstract interface AbstractDao<T extends AbstractDTO> {
 	 *            AbstractDTO
 	 * @return List<T>
 	 */
-	@Cacheable(value = "getPageList", key = "#root.targetClass + #root.methodName + #root.args[0].currpage")
+	//@Cacheable(value = "getPageList", key = "#root.targetClass + #root.methodName + #root.args[0].currpage")
 	List<T> getPageList(T t);
 
 	/**
@@ -35,7 +35,7 @@ public abstract interface AbstractDao<T extends AbstractDTO> {
 	 *            AbstractDTO
 	 * @return int
 	 */
-	@Cacheable(value = "getTotal", key = "#root.targetClass + #root.methodName + #root.args[0].currpage")
+	//@Cacheable(value = "getTotal", key = "#root.targetClass + #root.methodName + #root.args[0].currpage")
 	int getTotal(T t);
 
 	/**

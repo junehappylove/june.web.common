@@ -54,6 +54,10 @@ public abstract class AbstractDTO implements Serializable {
 
 	private String ids;// 删除使用的字段
 
+	/**
+	 * 设置dto名称
+	 * @return String
+	 */
 	protected abstract String getDtoName();
 
 	@Override
